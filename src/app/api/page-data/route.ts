@@ -9,12 +9,12 @@ const contactBar = {
       icon: "/images/icon/mail-icon.svg",
       link: "mailto:luisg2187@gmail.com"
     },
-    {
-      type: "phone",
-      label: "+524492860524",
-      icon: "/images/icon/call-icon.svg",
-      link: "tel:+524492860524"
-    },
+    // {
+    //   type: "phone",
+    //   label: "+524492860524",
+    //   icon: "/images/icon/call-icon.svg",
+    //   link: "tel:+524492860524"
+    // },
     {
       type: "linkedin",
       label: "LinkedIn",
