@@ -59,28 +59,27 @@ const EducationSkills = () => {
                   return (
                     <div
                       key={index}
-                      className="p-4 xl:p-6 border border-muted rounded-lg flex flex-col gap-5 sm:gap-10 items-center justify-between bg-card print:bg-white print:text-black print:break-inside-avoid"
+                      className="aspect-square p-2 xl:p-6 border border-muted rounded-lg flex flex-col gap-2 sm:gap-4 items-center justify-center bg-card print:bg-white print:text-black print:break-inside-avoid"
                     >
-                      <div className="flex flex-col items-center gap-5">
+                      <div className="flex flex-col items-center gap-2 sm:gap-4">
                         <Image
                           src={value?.icon}
                           alt="icon"
-                          width={70}
-                          height={70}
+                          width={60}
+                          height={60}
                           className={
                             ["Typescript", "Django", "Sql"].includes(value?.name) 
-                              ? "" 
-                              : "dark:brightness-0 dark:invert print:filter-none"
+                              ? "h-10 w-10 sm:h-15 sm:w-15 object-contain" 
+                              : "h-10 w-10 sm:h-15 sm:w-15 object-contain dark:invert print:filter-none"
                           }
                         />
-                        <p className="text-foreground font-normal">{value?.name}</p>
+                        <p className="text-foreground text-xs sm:text-base font-normal text-center">{value?.name}</p>
                       </div>
-                      <div className="flex gap-1">
+                      <div className="flex gap-0.5 sm:gap-1">
                         {[...Array(5)].map((_, i) => (
                           <svg
                             key={i}
-                            width="9"
-                            height="9"
+                            className="w-1.5 h-1.5 sm:w-2 sm:h-2"
                             viewBox="0 0 9 9"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"

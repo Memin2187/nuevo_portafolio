@@ -22,13 +22,13 @@ const Header = () => {
             </div>
 
             {/* Botón de descarga al centro */}
-            <div className="flex justify-center flex-1">
+            <div className="flex justify-center flex-1 min-w-0">
               <Button
                 variant={"outline"}
                 onClick={handleDownloadPDF}
-                className="relative overflow-hidden cursor-pointer w-fit h-full py-2 sm:py-3 md:py-5 px-4 sm:px-5 md:px-7 border border-primary rounded-full group"
+                className="relative overflow-hidden cursor-pointer w-fit h-auto py-1.5 sm:py-3 px-3 sm:px-5 border border-primary rounded-full group whitespace-nowrap"
               >
-                <span className="relative z-10 text-xl font-medium text-black group-hover:text-white dark:text-white transition-colors duration-300">
+                <span className="relative z-10 text-xs sm:text-base md:text-xl font-medium text-foreground transition-colors duration-300 group-hover:text-white">
                   {t("nav.download")}
                 </span>
               </Button>
